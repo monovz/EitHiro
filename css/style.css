@@ -1,0 +1,156 @@
+html,body{
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    animation: blinkingBackground 2s infinite;
+    color: white;
+    overflow: hidden;
+    user-select: none;
+}
+
+@keyframes blinkingBackground{
+    0%		{ background-color: #10c018;}
+    25%		{ background-color: #1056c0;}
+    50%		{ background-color: #ef0a1a;}
+    75%		{ background-color: #254878;}
+    100%	{ background-color: #04a1d5;}
+}
+
+
+#start-game {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+#img-start {width: 400px;display: block;}
+
+#btn-start {
+    display: inline-block;
+    position: relative;
+    left: 35%;
+    color: white;
+    font-size: 20px;
+}
+
+#btn-start:hover {
+    color: black;
+}
+
+#btn-audio {
+    height: 80px;
+    position: relative;
+    left: 83%;
+    top: 5%;
+    visibility: hidden;
+}
+
+#btn-audio-2 {
+    height: 80px;
+    position: relative;
+    left: 83%;
+    top: 5%;
+}
+
+.audio-text {
+    font-size: 15px;
+    display: inline-block;
+    color: white;
+    user-select: none;
+    margin: 0px;
+}
+
+#audio-on:hover {
+    text-decoration: underline!important;
+    cursor: pointer;
+    color: black!important
+}
+
+#audio-off:hover {
+    text-decoration: underline!important;
+    cursor: pointer;
+    color: black!important
+}
+
+#click-anywhere {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    margin: 0;
+    animation: blinkingText 0.5s infinite;
+    cursor: default;
+}
+
+@keyframes blinkingText{
+    0%		{ color: white;}
+    50%		{ color: transparent;}
+    100%	{ color: white;}
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+    user-select: none;
+}
+
+#choose-chara {
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    height: 90%;
+    top: 20%;
+    padding-left: 3%;
+}
+
+.box-chara {
+    display: inline-block;
+    width: 18%;
+    height: 200px;
+    margin: 2%;
+}
+
+.box-chara img {
+    width: 100%;
+    filter: saturate(30%);
+}
+
+.box-chara img:hover {
+    filter: none;
+}
+
+#back {position: absolute;top: 5%;text-decoration: none;color: white;left: 3%;}
+
+#back:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#choose-chara .box-chara .chara-name {padding-top: 10px;position: relative;text-align: center;left: 3%;}
+
+#brand {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+}
+
+#brand-2 {
+    position: absolute;
+    margin: 0;
+    left: 50%;
+    top: 7%;
+    transform: translate(-50%,-50%);
+}
