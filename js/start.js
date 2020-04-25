@@ -1,6 +1,5 @@
 var bgMusic= new Audio("assets/bgMusic.mp3")
 var hoverSfx= new Audio("assets/hover.mp3")
-var clickedSfx= new Audio("assets/clicked.mp3")
 
 var audioBtnOn= document.getElementById("audio-on")
 audioBtnOn.onclick = function() {
@@ -27,9 +26,6 @@ audioBtnOff.onmouseover = function() {
 }
 
 var start= document.getElementById("btn-start")
-start.onclick = function() {
-    clickedSfx.play();
-}
 
 start.onmouseover = function() {
     hoverSfx.play();
